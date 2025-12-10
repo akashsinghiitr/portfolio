@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="https://github.com/akashsinghiitr" class="logo">Akash</a>
+        <ul class="nav-links">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="container">
+        <h1 class="animate-text">
+          Hi, I'm <span class="highlight">Akash Singh</span>
+        </h1>
+        <p class="subtitle animate-text delay-1">
+          ML Enthusiast | Applied AI Research
+        </p>
+        <div class="social-links animate-text delay-2">
+          <a href="mailto:akashsingh242678@gmail.com" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/akashsinghiitr/"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/akashsinghiitr"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1cVY8-8aBE9y5NOYrd6v_Q6sQY8ldTbZi/view?usp=drive_link"
+          class="btn animate-text delay-3"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View My Resume</a
+        >
+      </div>
+    </header>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="card-header">
+                <h3>Software Engineer Intern</h3>
+                <span class="date">May 2025 - July 2025</span>
+              </div>
+              <h4 class="company">
+                Larsen and Toubro Finance
+                <span class="location">| Bangalore, India</span>
+              </h4>
+              <ul class="job-description">
+                <li>
+                  Engineered a keystroke-based authentication system using
+                  Random Forests, reaching a True Acceptance Rate (TAR) of 96%
+                  at a 1% False Acceptance Rate (FAR), enabling secure login for
+                  2,000+ employees.
+                </li>
+                <li>
+                  Prototyped a Kafka-based streaming pipeline to process
+                  authentication data in real-time, reducing end-to-end latency
+                  to ~200ms.
+                </li>
+                <li>
+                  Implemented time-series preprocessing and applied Gaussian
+                  Mixture Models with Isolation Forests to detect anomalous
+                  login patterns, achieving an F1-score of 0.87 on 100k+ login
+                  sessions.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="card-header">
+                <h3>Software Development Co-op</h3>
+                <span class="date">May 2024 - July 2024</span>
+              </div>
+              <h4 class="company">
+                AlgoUniversity
+                <span class="location">| Hyderabad (Remote)</span>
+              </h4>
+              <ul class="job-description">
+                <li>
+                  Developed a Dockerized Online Judge, serving 200+ users with
+                  ~10s latency.
+                </li>
+                <li>
+                  Refactored backend for concurrency, cutting DB latency by 20%
+                  and server costs by 25%.
+                </li>
+                <li>
+                  Deployed microservices with AWS orchestration, boosting
+                  throughput by 30% and enabling scalability.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Duplicate Question Classifier</h3>
+            <a
+              href="https://github.com/akashsinghiitr/Duplicate-Question-Classifier"
+              class="btn-small"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            >
+          </div>
+          <p class="tech-stack">PyTorch, Word2Vec, BERT Fine-tuning</p>
+          <ul class="job-description">
+            <li>
+              Built a custom PyTorch model with Word2Vec and prototyped BERT to
+              identify semantically similar question pairs with 84% accuracy
+              (0.82 F1).
+            </li>
+            <li>
+              Trained a Word2Vec-embedded neural network using Bayesian
+              hyperparameter tuning, achieving 12% accuracy gain over baseline.
+            </li>
+            <li>Preprocessed 400,000+ question pairs for training.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Deep Learning-based OCR Pipeline (Internship Project)</h3>
+          </div>
+          <p class="tech-stack">OpenCV, PP-OCRv5, PyTorch</p>
+          <ul class="job-description">
+            <li>
+              Developed a custom text extraction pipeline for Indian ID
+              documents using OpenCV by fine-tuning a PP-OCRv5 model (~90%
+              accuracy).
+            </li>
+            <li>
+              Delivered structured JSON data for 5,000+ documents to enterprise
+              endpoints.
+            </li>
+            <li>
+              Optimized OCR pipeline for CPU-only inference, cutting
+              infrastructure costs by 40%.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Grammar Scoring Engine for Spoken Audios</h3>
+          </div>
+          <p class="tech-stack">DeBERTa-v3, Wave2Vec2, PyTorch</p>
+          <ul class="job-description">
+            <li>
+              Developed a speech-based grammar scoring engine to predict scores
+              (1-5) from 45-60s audio samples using MFCC, spectral, and prosodic
+              features and text embeddings.
+            </li>
+            <li>
+              Fine-tuned DeBERTa-v3-large for regression over 409 training
+              samples.
+            </li>
+            <li>
+              Achieved an RMSE of ~0.42 on validation set through regularized
+              regression head and hyperparameter tuning.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title">Hackathons & Competitions</h2>
+        <div class="card highlight-card">
+          <div class="card-header">
+            <h3>1st Place — HiLabs AIQuest Hackathon 2025</h3>
+            <a
+              href="https://github.com/akashsinghiitr/parser"
+              class="btn-small"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            >
+          </div>
+          <ul class="job-description">
+            <li>
+              Engineered an NLP pipeline using spaCy NER, extracting 10+
+              healthcare provider attributes from unstructured roster emails
+              with ~0.91 F1-score.
+            </li>
+            <li>
+              Performed TAT analysis, achieving sub-second processing for simple
+              emails and 0.7-1.2s throughput on complex cases.
+            </li>
+            <li>
+              Implemented a batch processing mechanism, reducing average
+              turnaround time by ~60% for high-volume workloads.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages/Scripting</h3>
+            <div class="tags">
+              <span>Python</span><span>C++</span><span>JavaScript</span
+              ><span>TypeScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>AI/ML</h3>
+            <div class="tags">
+              <span>PyTorch</span><span>NumPy</span><span>Pandas</span
+              ><span>Matplotlib</span><span>OpenCV</span
+              ><span>Scikit-learn</span><span>Transformers</span
+              ><span>LLM Fine tuning</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Infra</h3>
+            <div class="tags">
+              <span>Docker</span><span>Kafka</span><span>AWS</span
+              ><span>Flask</span><span>MongoDB</span><span>SQL Server</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Coursework</h3>
+            <div class="tags">
+              <span>Statistics</span><span>Machine Learning</span
+              ><span>Deep Learning</span><span>Data Structures</span
+              ><span>OOP</span><span>Operating Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+          <div class="card-header">
+            <h3>Indian Institute of Technology (IIT), Roorkee</h3>
+            <span class="date">Oct 2022 - June 2026</span>
+          </div>
+          <p class="degree">
+            Bachelor of Technology (B.Tech) in Mechanical Engineering
+          </p>
+          <p class="details">
+            <strong>GPA:</strong> 8.27/10 —
+            <strong>JEE Advanced AIR:</strong> 4189
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Akash Singh. All rights reserved.</p>
+        <div class="social-links-footer">
+          <a href="mailto:akashsingh242678@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/akashsinghiitr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/akashsinghiitr"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
