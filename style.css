@@ -4,7 +4,7 @@
   --heading-color: #ccd6f6;
   --accent-color: #64ffda;
   --card-bg: #112240;
-  --nav-bg: rgba(10, 25, 47, 0.85);
+  --nav-bg: rgba(10, 25, 47, 0.75);
   --transition: all 0.3s ease-in-out;
 }
 
@@ -45,7 +45,7 @@ ul {
   background-color: var(--nav-bg);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  padding: 20px 0;
+  padding: 15px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -53,12 +53,22 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
+  transition: var(--transition);
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 .nav-links {
